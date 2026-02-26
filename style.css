@@ -1,0 +1,114 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: #fff;
+      }
+
+      .game {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        border-radius: 16px;
+        width: 380px;
+        text-align: center;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .game h1 {
+        margin-bottom: 20px;
+        font-size: 22px;
+      }
+
+      /* Scoreboard */
+      .scoreboard {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+      }
+
+      .score {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 10px 20px;
+        border-radius: 12px;
+        width: 45%;
+      }
+
+      .score p {
+        font-size: 14px;
+        opacity: 0.9;
+      }
+
+      .score span {
+        font-size: 32px;
+        font-weight: bold;
+      }
+
+      /* Choices */
+      .choices {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+      }
+
+      .choice {
+        flex: 1;
+        margin: 0 5px;
+        padding: 12px 0;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background: #fff;
+        color: #333;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+
+      .choice:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Result */
+      .result {
+        margin-bottom: 20px;
+      }
+
+      #result-text {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .moves {
+        font-size: 14px;
+        opacity: 0.9;
+      }
+
+      /* Reset */
+      .reset {
+        padding: 10px 0;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        background: #ff4b5c;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+
+      .reset:hover {
+        background: #ff2e44;
+      }
